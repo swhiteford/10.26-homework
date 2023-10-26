@@ -93,3 +93,23 @@ console.log(`${timmy.getName()}'s age is ${timmy.getAge()}`)
 console.log(`${timmy.getName()}'s bank balance is ${timmy.bankAccount}`)
 console.log(`${timmy.getName()}'s weight is ${timmy.weight}`)
 
+class Dinner {
+constructor (appetizer, entree, dessert){
+  this.appetizer = appetizer
+  this.entree = entree
+  this.dessert = dessert
+}
+}
+
+class Chef {
+makedinner (appetizer, entree, dessert)
+{
+  const dinner = new Dinner (appetizer, entree, dessert)
+  return dinner
+}
+}
+
+const chefRamsey = new Chef()
+console.log (chefRamsey.makedinner ("shrimp cocktail", "lamb bhuna", "carrot cake"))
+console.log (chefRamsey.makedinner ("cheesetray", "chicken karahi", "chocolate cake"))
+console.log (chefRamsey.makedinner ("avocado toast", "chicken biryani", "fruit salad"))
