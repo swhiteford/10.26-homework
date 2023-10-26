@@ -65,29 +65,31 @@ this.hamsters.push (hamster)
 
 const timmy = new Person ("Timmy")
 console.log ("instantiated person")
-timmy.age = 5
-timmy.eat ()
-timmy.eat()
-timmy.eat()
-timmy.eat()
-timmy.eat()
+for(let i=0;i<5;i++){
+  timmy.ageUp()
+  }
 
-timmy.exercise ()
-timmy.exercise ()
-timmy.exercise ()
-timmy.exercise ()
-timmy.exercise ()
-
-timmy.age = 9
+  for(let i=0; i<=5;i++){
+    timmy.exercise()
+    }
+console.log (timmy.age)
+    for(let i=0;i<4;i++){
+      timmy.ageUp()
+      }
 
 const hamster = new Hamster ("Gus")
 hamster.owner = timmy.getName()
 timmy.buyHamster (hamster)
-timmy.age = 15
-timmy.eat ()
-timmy.eat ()
-timmy.exercise ()
-timmy.exercise ()
+console.log(timmy.age)
+for(let i=0;i<6;i++){
+  timmy.ageUp()
+  }
+  for(let i=0;i<=2;i++){
+    timmy.eat()
+    }
+    for(let i=0;i<=2;i++){
+      timmy.exercise()
+      }
 
 console.log(`${timmy.getName()}'s age is ${timmy.getAge()}`)
 console.log(`${timmy.getName()}'s bank balance is ${timmy.bankAccount}`)
